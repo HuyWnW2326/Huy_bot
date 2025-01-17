@@ -2,6 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
     <xacro:include filename="inertial_macros.xacro"/>
+    
     <material name="white">
         <color rgba="1 1 1 1" />
     </material>
@@ -151,8 +152,8 @@
 
     <gazebo reference="caster_wheel">
         <material>Gazebo/Black</material>
-        <mu1 value="0.001"/>
+        <mu1 value="0.001"/>          <!-- set gia tri ma sat cho banh caster wheel-->
         <mu2 value="0.001"/>
     </gazebo>
-
+    
 </robot>
